@@ -1,2 +1,2 @@
 # Intern-India
-WIP
+Work In Progress
