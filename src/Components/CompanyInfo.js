@@ -3,6 +3,8 @@ import React, { Component, PropTypes } from 'react';
 class CompanyInfo extends Component {
   static propTypes = {
     className: PropTypes.string,
+    name: PropTypes.string,
+    location: PropTypes.object
   };
 
   constructor(props) {
@@ -11,7 +13,10 @@ class CompanyInfo extends Component {
 
   render() {
     return (
-      <h1>This is the company info right here</h1>  
+      <div className="companyInfo">
+        <span className="companyName">{this.props.name}</span>
+        <span className="companyLocation">{this.props.location.city}, {this.props.location.country}</span>
+      </div>
     );
   }
 }

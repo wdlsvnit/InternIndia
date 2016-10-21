@@ -4,11 +4,12 @@
 
 @import "compass";
 @import "compass/reset";
+@import "variables";
 @import "Components/App";
 @import "Components/CompanyList";
 @import "Components/Company";
 @import "Components/CompanyInfo";
-@import "Components/CompanyOpenings";
+@import "Components/Openings";
 @import "Components/Opening";
 @import "Components/OpeningInfo";
 @import "Components/ButtonPrimary";

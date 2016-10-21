@@ -1,0 +1,11 @@
+.opening {
+	padding: 25px;
+	font-size: 1.8rem;
+	font-family: 'Roboto', 'sans-serif';
+	background-color: $color-opening-base;
+	border-bottom: 1px solid $color-main-border;
+}
+
+.opening:last-child {
+	border-bottom: none;
+}

@@ -1,0 +1,10 @@
+.company {
+	color: $color-main-text;
+}
+
+.company:first-child {
+	& .companyInfo {
+		border-top: none;
+	}
+}
+

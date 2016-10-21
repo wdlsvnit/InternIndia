@@ -1,19 +1,27 @@
 import React, { Component, PropTypes } from 'react';
 
+import Openings from './Openings';
+import CompanyInfo from './CompanyInfo';
+
 class Company extends Component {
-    static propTypes = {
-      className: PropTypes.string,
-    };
+  static propTypes = {
+    className: PropTypes.string,
+    data: PropTypes.object
+  };
 
-    constructor(props) {
-      super(props);
-    }
+  constructor(props) {
+    super(props);
+  }
 
-    render() {
-      return (
-				<h1>This is a company</h1>          
-      );
-    }
+  render() {
+    var {name, location} = this.props.data;
+    return (
+      <div className="company">
+        <CompanyInfo name={name} location={location}/>
+        <Openings data={this.props.data.openings}/>
+      </div>
+    );
+  }
 }
 
 export default Company;

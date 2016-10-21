@@ -1,5 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 
+// Components
+import Company from './Company';
+
 class CompanyList extends Component {
   static propTypes = {
     className: PropTypes.string,
@@ -7,11 +10,39 @@ class CompanyList extends Component {
 
   constructor(props) {
     super(props);
+    this.state = {
+      data: null
+    };
+  }
+
+  componentDidMount() {
+    this.fetchCompanyData();    
+  }
+
+  fetchCompanyData(){
+    var url = './data.json';
+    fetch(url)
+      .then( response => response.json() )
+      .then( jsonData => {
+        this.setState({
+          data: jsonData
+        });
+      })
+      .catch( error => console.log('JSON Fetch error : ' + error) );
   }
 
   render() {
+    var {data} = this.state;
     return (
-			<h1>I am the company list</h1>        
+    	<div className="companyList">
+        {
+          data && data.map( (company, i) => {
+            return(
+              <Company key={i} data={company} />
+            );
+          }) 
+        }
+    	</div>
     );
   }
 }

@@ -1,0 +1,18 @@
+.companyInfo {
+	padding: 30px 25px 30px 25px;
+	border-top: 1px solid $color-main-border;
+	border-bottom: 1px solid $color-main-border;
+}
+
+.companyName {
+	font-size: 2rem;
+	letter-spacing: 0.15rem;
+	display: block;
+}
+
+.companyLocation {
+	margin-top: 0.5rem;
+	font-size: 1.6rem;
+	letter-spacing: 0.12rem;
+	display: block;
+}

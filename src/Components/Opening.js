@@ -3,6 +3,7 @@ import React, { Component, PropTypes } from 'react';
 class Opening extends Component {
   static propTypes = {
     className: PropTypes.string,
+    data: PropTypes.object
   };
 
   constructor(props) {
@@ -11,7 +12,7 @@ class Opening extends Component {
 
   render() {
     return (
-    	<h1>Opening</h1> 
+      <li className="opening">{this.props.data.role}</li>
     );
   }
 }

@@ -22,16 +22,15 @@ Compiles SASS into `public/css/main.css`.
 Edit the `public/data.json` file in accordance with the following format.
 ```javascript
   {
-    'name': 'Name of the company',
-    'location': {
-      'city': 'City',
-      'country': 'Country'
+    "name": "Name of the company",
+    "location": {
+      "city": "City",
+      "country": "Country"
     },
-    'openings': [
+    "openings": [
       {
-        'role': 'Name of the role',
-        'applyLink': 'Link to apply for the role' // Could be a :mailto
+        "role": "Name of the role",
+        "applyLink": "Link to apply for the role (could be a :mailto link)" 
       }
     ]
   }
-`

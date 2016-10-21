@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
-
 // Components
 import CompanyList from './CompanyList';
+
+// We need to pull all the data here
 
 class App extends Component {
   render() {

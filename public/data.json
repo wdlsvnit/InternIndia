@@ -1,0 +1,36 @@
+[
+	{
+	  "name": "Razorpay",
+	  "location": {
+	    "city": "Bangalore",
+	    "country": "India"
+	  },
+	  "openings": [
+	    {
+	      "role": "Design Intern - Summer 2017",
+	      "applyLink": "http://www.google.com" 
+	    },
+	    {
+	      "role": "Backend Intern - Winter 2016",
+	      "applyLink": "http://www.google.com" 
+	    },
+	    {
+	      "role": "Front End Intern - Summer 2017",
+	      "applyLink": "http://www.google.com" 
+	    }
+	  ]
+	},
+	{
+	  "name": "Flipkart",
+	  "location": {
+	    "city": "Bangalore",
+	    "country": "India"
+	  },
+	  "openings": [
+	    {
+	      "role": "Marketing Intern - Summer 2017",
+	      "applyLink": "http://www.google.com" 
+	    }
+	  ]
+	}
+]
