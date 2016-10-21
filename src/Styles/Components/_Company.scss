@@ -1,5 +1,18 @@
+@include keyframes(fadeIn) {
+	from {
+		opacity: 0;
+	} 
+
+	to {
+		opacity: 1;
+	}
+}
+
+
 .company {
 	color: $color-main-text;
+	@include animation(fadeIn 0.3s ease-in);
+	@include animation-fill-mode(forwards);
 }
 
 .company:first-child {

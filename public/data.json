@@ -32,5 +32,22 @@
 	      "applyLink": "http://www.google.com" 
 	    }
 	  ]
+	},
+	{
+		"name": "HackerRank",
+		"location": {
+			"city": "Bangalore",
+			"country": "India"
+		},
+		"openings": [
+			{
+				"role": "Developer Intern",
+				"applyLink": "http://www.google.com"
+			},
+			{
+				"role": "Problem Setting Intern",
+				"applyLink": "http://www.google.com"
+			}
+		]
 	}
 ]
