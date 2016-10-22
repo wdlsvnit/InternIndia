@@ -1,14 +1,28 @@
 import React, { Component } from 'react';
 // Components
 import CompanyList from './CompanyList';
-
-// We need to pull all the data here
+import SearchBar from './SearchBar';
 
 class App extends Component {
+
+	constructor(props) {
+		super(props);
+		this.state = {
+			searchString: null
+		};
+	}
+
+	searchPerformed(e) {
+		this.setState({
+			searchString: e.target.value
+		});
+	}
+
   render() {
     return (
       <div className="App">
-        <CompanyList/>
+      	<SearchBar onInput={this.searchPerformed.bind(this)} placeholder="Search by company name..."/>
+        <CompanyList searchString={this.state.searchString}/>
       </div>
     );
   }

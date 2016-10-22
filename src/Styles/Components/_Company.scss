@@ -11,9 +11,10 @@
 
 .company {
 	color: $color-main-text;
-	@include animation(fadeIn 0.3s ease-in);
+	@include animation(fadeIn 0.1s ease-in);
 	@include animation-fill-mode(forwards);
 }
+
 
 .company:first-child {
 	& .companyInfo {

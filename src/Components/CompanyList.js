@@ -6,6 +6,7 @@ import Company from './Company';
 class CompanyList extends Component {
   static propTypes = {
     className: PropTypes.string,
+    searchString: PropTypes.string
   };
 
   constructor(props) {
@@ -31,14 +32,24 @@ class CompanyList extends Component {
       .catch( error => console.log('JSON Fetch error : ' + error) );
   }
 
+  filterToSearchString(company) {
+    var {searchString} = this.props;
+    if(searchString)  {
+      return company.name.toLowerCase().search(searchString.toLowerCase()) > -1;
+    } else {
+      return true;
+    }
+  }
+
   render() {
     var {data} = this.state;
+    // Got to filter the data according to the search string
     return (
     	<div className="companyList">
         {
-          data && data.map( (company, i) => {
+          data && data.filter(this.filterToSearchString.bind(this)).map( (company, i) => {
             return(
-              <Company key={i} data={company} />
+              <Company key={i} data={company}/>
             );
           }) 
         }

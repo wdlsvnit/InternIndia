@@ -49,5 +49,28 @@
 				"applyLink": "http://www.google.com"
 			}
 		]
+	},
+	{
+		"name": "Intel",
+		"location": {
+			"city": "Hyderabad",
+			"country": "India"
+		},
+		"openings": [
+			{
+				"role": "IOT Intern",
+				"applyLink": "http://www.google.com"
+			},
+			{
+				"role": "Microprocessor Intern",
+				"applyLink": "http://www.google.com"
+			},
+			{
+				"role": "Microprocessor Design Intern",
+				"applyLink": "http://www.google.com"
+			}
+
+		]
 	}
+
 ]

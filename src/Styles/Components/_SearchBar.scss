@@ -1,0 +1,10 @@
+.searchInput {
+	display: block;
+	width: 750px;
+	font-size: 1.8rem;
+	margin: 20px auto 0px auto;
+	padding: 1rem;
+	font-family: 'Roboto', 'sans-serif';
+	@include border-radius(2px);
+	border: 1px solid $color-main-border;
+}
