@@ -3,6 +3,7 @@ import React, { Component, PropTypes } from 'react';
 class OpeningInfo extends Component {
   static propTypes = {
     className: PropTypes.string,
+    info: PropTypes.string
   };
 
   constructor(props) {
@@ -11,7 +12,9 @@ class OpeningInfo extends Component {
 
   render() {
     return (
-      <h1>Opening Info</h1>  
+      <div className="openingInfo">
+        {this.props.info}
+      </div>
     );
   }
 }

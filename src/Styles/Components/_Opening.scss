@@ -1,9 +1,13 @@
 .opening {
-	padding: 25px;
+	padding: 25px 25px 25px 25px;
 	font-size: 1.8rem;
 	font-family: 'Roboto', 'sans-serif';
 	background-color: $color-opening-base;
 	border-bottom: 1px solid $color-main-border;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .opening:last-child {

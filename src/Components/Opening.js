@@ -1,5 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 
+import OpeningInfo from './OpeningInfo';
+import ButtonPrimary from './ButtonPrimary';
+
 class Opening extends Component {
   static propTypes = {
     className: PropTypes.string,
@@ -12,7 +15,10 @@ class Opening extends Component {
 
   render() {
     return (
-      <li className="opening">{this.props.data.role}</li>
+      <li className="opening">
+        <OpeningInfo info={this.props.data.role}/>
+        <ButtonPrimary text="Apply" link={this.props.data.applyLink}/>
+      </li>
     );
   }
 }

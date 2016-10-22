@@ -1,0 +1,27 @@
+.button {
+	background: black;
+	border: none;
+	border-radius: 3px;
+	color: white;
+	text-align: center;
+	width: 120px;
+	height: 40px;
+	padding: 10px;
+	font-family: Montserrat;
+	font-size: 1.4rem;
+	color: #FFFFFF;
+	letter-spacing: 1.05px;
+	line-height: 17px;
+	cursor: pointer;
+	text-decoration: none;
+	@include transition(all 0.108s ease-in);
+	@include box-shadow(0px 0px 2px 0px rgba(0,0,0,0.06), 0px 2px 2px 0px rgba(0,0,0,0.12));
+}
+
+.primary {
+	background: $color-button-primary;
+	&:hover {
+		@include box-shadow(0px 0px 4px 0px rgba(0,0,0,0.10), 0px 4px 8px 0px rgba(0,0,0,0.20));
+		@include transform(translateY(-1px) scale(1.01));
+	}
+}

@@ -3,6 +3,8 @@ import React, { Component, PropTypes } from 'react';
 class ButtonPrimary extends Component {
   static propTypes = {
     className: PropTypes.string,
+    text: PropTypes.string,
+    link: PropTypes.string
   };
 
   constructor(props) {
@@ -11,7 +13,9 @@ class ButtonPrimary extends Component {
 
   render() {
     return (
-    	<h1>Apply button</h1>  
+      <a href={this.props.link} target="_blank" className="button primary">
+        {this.props.text}
+      </a>
     );
   }
 }
