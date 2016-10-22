@@ -16,10 +16,10 @@ class Company extends Component {
   render() {
     var {name, location} = this.props.data;
     return (
-      <div className="company">
+      <article className="company">
         <CompanyInfo name={name} location={location}/>
         <Openings data={this.props.data.openings}/>
-      </div>
+      </article>
     );
   }
 }

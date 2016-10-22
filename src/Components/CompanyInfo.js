@@ -14,8 +14,8 @@ class CompanyInfo extends Component {
   render() {
     return (
       <div className="companyInfo">
-        <span className="companyName">{this.props.name}</span>
-        <span className="companyLocation">{this.props.location.city}, {this.props.location.country}</span>
+        <h1 className="companyName">{this.props.name}</h1>
+        <p className="companyLocation">{this.props.location.city}, {this.props.location.country}</p>
       </div>
     );
   }
