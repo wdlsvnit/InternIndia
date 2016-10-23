@@ -43,9 +43,8 @@ class CompanyList extends Component {
 
   render() {
     var {data} = this.state;
-    // Got to filter the data according to the search string
     return (
-    	<div className="companyList">
+    	<ul className="companyList">
         {
           data && data.filter(this.filterToSearchString.bind(this)).map( (company, i) => {
             return(
@@ -53,7 +52,7 @@ class CompanyList extends Component {
             );
           }) 
         }
-    	</div>
+    	</ul>
     );
   }
 }

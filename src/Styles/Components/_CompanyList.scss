@@ -6,3 +6,9 @@
 	margin: 20px auto 0px auto;
 	font-size: 4.8rem;
 }
+
+.companyList > li:first-child {
+	& .companyInfo {
+		border-top: none;
+	}
+}
