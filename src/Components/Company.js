@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { StickyContainer, Sticky } from 'react-sticky';
 
 import Openings from './Openings';
 import CompanyInfo from './CompanyInfo';
@@ -16,10 +17,12 @@ class Company extends Component {
   render() {
     var {name, location} = this.props.data;
     return (
-      <li className="company">
-        <CompanyInfo name={name} location={location}/>
+      <StickyContainer className="company">
+        <Sticky>
+          <CompanyInfo name={name} location={location}/>
+        </Sticky>
         <Openings data={this.props.data.openings}/>
-      </li>
+      </StickyContainer>
     );
   }
 }
