@@ -13,11 +13,13 @@ class SearchBar extends Component {
 
   render() {
     return (
-			<input 
-				className="searchInput" 
-				type="text" 
-				onChange={this.props.onInput} 
-				placeholder={this.props.placeholder}/>
+      <div className="searchBar">
+  			<input
+  				className="searchInput" 
+  				type="text" 
+  				onChange={this.props.onInput} 
+  				placeholder={this.props.placeholder}/>
+      </div>
     );
   }
 }
