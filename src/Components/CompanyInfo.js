@@ -13,10 +13,10 @@ class CompanyInfo extends Component {
 
   render() {
     return (
-      <div className="companyInfo">
+      <section className="companyInfo">
         <h1 className="companyName">{this.props.name}</h1>
         <p className="companyLocation">{this.props.location.city}, {this.props.location.country}</p>
-      </div>
+      </section>
     );
   }
 }

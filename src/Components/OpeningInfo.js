@@ -12,9 +12,9 @@ class OpeningInfo extends Component {
 
   render() {
     return (
-      <div className="openingInfo">
+      <section className="openingInfo">
         {this.props.info}
-      </div>
+      </section>
     );
   }
 }

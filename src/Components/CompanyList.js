@@ -44,7 +44,7 @@ class CompanyList extends Component {
   render() {
     var {data} = this.state;
     return (
-    	<div className="companyList">
+    	<article className="companyList">
         {
           data && data.filter(this.filterToSearchString.bind(this)).map( (company, i) => {
             return(
@@ -52,7 +52,7 @@ class CompanyList extends Component {
             );
           }) 
         }
-    	</div>
+    	</article>
     );
   }
 }
