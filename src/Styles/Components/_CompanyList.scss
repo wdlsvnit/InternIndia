@@ -1,14 +1,23 @@
 .companyList {
 	background-color: $color-main;
-	border-radius: 2px;
+	border-radius: $border-radius-main;
 	border: 1px solid $color-main-border;
 	width: 750px;
 	margin: 20px auto 0px auto;
 	font-size: 4.8rem;
 }
 
-.companyList > div:first-child {
+.companyList > .company:first-child {
 	& .companyInfo {
 		border-top: none;
+		border-top-left-radius: $border-radius-main;
+		border-top-right-radius: $border-radius-main;
+	}
+}
+
+.companyList > .company:last-child {
+	& .openings > .opening:last-child{
+		border-bottom-left-radius: $border-radius-main;
+		border-bottom-right-radius: $border-radius-main;
 	}
 }

@@ -11,7 +11,7 @@
 	padding: 1rem;
 	padding-left: 4.5rem;
 	font-family: 'Roboto', 'sans-serif';
-	@include border-radius(2px);
+	border-radius: $border-radius-main;
 	border: 1px solid $color-main-border;
 	background-image: url('../images/icon_search.svg');
 	background-repeat: no-repeat;	
