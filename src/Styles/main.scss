@@ -5,7 +5,10 @@
 @import "compass";
 @import "compass/reset";
 @import "variables";
+@import "mixins";
 @import "Components/App";
+@import "Components/Nav";
+@import "Components/NavItem";
 @import "Components/About";
 @import "Components/NotFound";
 @import "Components/CompanyList";

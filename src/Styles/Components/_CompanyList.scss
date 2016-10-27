@@ -2,9 +2,9 @@
 	background-color: $color-main;
 	border-radius: $border-radius-main;
 	border: 1px solid $color-main-border;
-	width: 750px;
-	margin: 20px auto 0px auto;
+	margin: $component-vertical-sep auto 0px auto;
 	font-size: 4.8rem;
+	@include componentwidth();
 }
 
 .companyList > .company:first-child {

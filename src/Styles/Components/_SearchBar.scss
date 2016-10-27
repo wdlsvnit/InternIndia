@@ -1,8 +1,8 @@
 .searchBar {
-	width: 750px;
 	margin: 20px auto 0px auto;
 	display: flex;
 	align-content: center;
+	@include componentwidth();
 }
 
 .searchInput {

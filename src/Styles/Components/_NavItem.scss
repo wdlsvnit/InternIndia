@@ -1,0 +1,26 @@
+@mixin navactive() {
+  color: $color-button-primary;
+  border-bottom: 1px solid $color-button-primary;
+  font-weight: bold;
+}
+
+.navItem {
+  margin-bottom: -2px;
+  display: inline-block;
+  margin-right: 30px;
+  height: 100%;
+  line-height: 45px;
+  cursor: pointer;
+  
+  &:hover {
+    @include navactive();
+  }
+  
+  .navItem:last-child {
+    margin-right: 0;
+  }
+}
+
+.nav .active {
+  @include navactive();
+}

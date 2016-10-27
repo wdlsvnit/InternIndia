@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // Components
 import CompanyList from './CompanyList';
 import SearchBar from './SearchBar';
+import Nav from './Nav';
 
 class App extends Component {
 
@@ -21,6 +22,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+				<Nav />
       	<SearchBar onInput={this.searchPerformed.bind(this)} placeholder="Search by company name..."/>
         <CompanyList searchString={this.state.searchString}/>
       </div>
