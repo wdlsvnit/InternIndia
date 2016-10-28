@@ -22,7 +22,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-				<Nav />
+				<Nav activeLink="home"/>
       	<SearchBar onInput={this.searchPerformed.bind(this)} placeholder="Search by company name..."/>
         <CompanyList searchString={this.state.searchString}/>
       </div>

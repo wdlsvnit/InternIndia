@@ -1,0 +1,8 @@
+.about {
+  margin: $component-vertical-sep auto 0 auto;
+  @include componentwidth();
+  
+  h1 {
+    font-size: 2.4rem;
+  }
+}

@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { Link } from 'react-router';
 import classNames from 'classnames';
 
 class NavItem extends Component {
@@ -19,9 +20,9 @@ class NavItem extends Component {
     });
 
     return (
-      <li className={navItemClasses}>
+      <Link to={this.props.link} className={navItemClasses}>
         {this.props.text}
-      </li>
+      </Link>
     );
   }
 }

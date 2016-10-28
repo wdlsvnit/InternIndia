@@ -1,5 +1,8 @@
 import React, { Component, PropTypes } from 'react';
 
+// Components 
+import Nav from './Nav';
+
 class About extends Component {
   static propTypes = {
     className: PropTypes.string,
@@ -11,8 +14,11 @@ class About extends Component {
 
   render() {
     return (
-      <div className="about">
-        Hello from the about page
+      <div className="App">
+        <Nav activeLink="about"/>
+        <article className="about">
+          <h1>Compiled list of internships available in India</h1>
+        </article>
       </div>
     );
   }

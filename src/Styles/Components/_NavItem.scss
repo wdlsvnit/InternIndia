@@ -9,15 +9,18 @@
   display: inline-block;
   margin-right: 30px;
   height: 100%;
-  line-height: 45px;
+  text-align: center;
   cursor: pointer;
+  line-height: 45px;
+  text-decoration: none;
+  color: $color-main-border;
+  
+  &:last-child {
+    margin-right: 0px;
+  }
   
   &:hover {
     @include navactive();
-  }
-  
-  .navItem:last-child {
-    margin-right: 0;
   }
 }
 
